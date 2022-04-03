@@ -6,12 +6,11 @@ class fibonacci {
         int n = 40;
         int sum;
 	
-	long startTime = DateTimeOffset.Now.ToUnixTimeMilliseconds();
+	    long startTime = DateTimeOffset.Now.ToUnixTimeMilliseconds();
        	sum = fib(n);
         long endTime = DateTimeOffset.Now.ToUnixTimeMilliseconds();
-        
-	Console.WriteLine("fib(" + n + ") = " + sum);
-	Console.WriteLine("time    = " + (endTime - startTime) + " milliseconds");
+
+	    Console.WriteLine((endTime - startTime) + " milliseconds");
     }
     
     static int fib(int n)
