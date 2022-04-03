@@ -1,10 +1,10 @@
 use std::time::Instant;
 
-fn fib(n: i32) -> i32{
+fn fib(n: u32) -> u32 {
     if n < 3 {
         return 1;
     } else {
-        return fib(n-1) + fib(n-2);
+        return fib(n - 1) + fib(n - 2);
     }
 }
 
